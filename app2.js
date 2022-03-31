@@ -1,13 +1,13 @@
 // 2p game
-const tpTitle=document.getElementById("2pTitle")
-const subTitle=document.getElementById("2pSubTitle")
-let opScorecard=document.getElementById("1pScorecard")
-const opRoll=document.getElementById("p1Roll")
-const opPass=document.getElementById("p1Pass")
-const tpScorecard=document.getElementById("2pScorecard")
-const tpRoll=document.getElementById("p2Roll")
-const tpPass=document.getElementById("p2Pass")
-const restart=document.getElementById("2pRestart")
+const tpTitle=document.getElementById("mpTitle")
+const subTitle=document.getElementById("mpSubTitle")
+let opScorecard=document.getElementById("opScorecard")
+const opRoll=document.getElementById("poRoll")
+const opPass=document.getElementById("poPass")
+const tpScorecard=document.getElementById("tpScorecard")
+const tpRoll=document.getElementById("ptRoll")
+const tpPass=document.getElementById("ptPass")
+const restart=document.getElementById("restart")
 const button=document.querySelectorAll("button")
 
 // functions
@@ -71,7 +71,8 @@ tpPass.addEventListener("click",() => {
     unremove(opPass)
 })
 restart.addEventListener("click",() => {
-    button.forEach(unremove)
+    unremove(opRoll)
+    unremove(opPass)
     remove(restart)
     tpTitle.textContent="2P DICE GAME"
     subTitle.textContent="Roll a 1 and lose, reach 20 to win"

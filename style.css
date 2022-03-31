@@ -3,6 +3,7 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    text-align: center;
 }
 * a{
     text-decoration: none;
@@ -36,3 +37,25 @@ a:hover{
 /* sp */
 #restart {display: none}
 #scorecard{font-size: 70px;}
+
+/* mp */
+#mpTitle{font-size: 70px;}
+#mpSubTitle{font-size:40px}
+.mpHero{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+}
+.Hero{
+    display: flex;
+    flex-direction:column;
+}
+.mpscorecard{
+    font-size: 70px;
+}
+.rollBtn{
+    margin-bottom: 10px;
+}
+#ptRoll{display:none}
+#ptPass{display:none}
