@@ -16,14 +16,13 @@ let diceImg={
 }
 let score=0
 let thisRoll=0
-const gameover=() => {
-    roll.style.display="none"
-    restart.style.display="block"
-}
 let diceroll=()=>{
     thisRoll=Math.floor(Math.random()*5.99+1)
     dice.src=diceImg[thisRoll]
-    console.log(thisRoll)
+}
+const gameover=() => {
+    roll.style.display="none"
+    restart.style.display="block"
 }
 const scoreupdate=() => {scorecard.textContent=score}
 roll.addEventListener("click",() => {
@@ -45,12 +44,3 @@ restart.addEventListener("click",() => {
     restart.style.display="none"
     state.textContent=""
 })
-
-
-// 2p game
-let tptitle=document.getElementById("2pTitle")
-let subTitle=document.getElementById("2pSubTitle")
-const opRoll=document.getElementById("1pRoll")
-const opPasses=document.getElementById("1pPass")
-const tpRoll=document.getElementById("2pRoll")
-const tpPasses=document.getElementById("2pPass")
