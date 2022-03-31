@@ -50,3 +50,7 @@ restart.addEventListener("click",() => {
 // 2p game
 let tptitle=document.getElementById("2pTitle")
 let subTitle=document.getElementById("2pSubTitle")
+const opRoll=document.getElementById("1pRoll")
+const opPasses=document.getElementById("1pPass")
+const tpRoll=document.getElementById("2pRoll")
+const tpPasses=document.getElementById("2pPass")

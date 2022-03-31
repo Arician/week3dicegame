@@ -10,22 +10,24 @@
         <header>
             <h1 id="2pTitle">2P DICE GAME</h1>
             <h2 id="2pSubTitle">Roll a 1 and lose, reach 20 to win</h2>
+            <button></button>
         </header>
         <div class="2pHero">
             <div class="p1Hero">
-                <h3>0</h3>
+                <h3 id="1pScorecard">0</h3>
                 <button id="p1Roll">Roll</button>
                 <button id="p1Pass">Pass</button>
             </div>
             <div class="2pdicebox">
                 <img src="images/1.png" alt="dice roll" id="dice">
             </div>
-            <div class="p2hero">
-                <h3>0</h3>
+            <div class="p2Hero">
+                <h3 id="2pScorecard">0</h3>
                 <button id="p2Roll">Roll</button>
                 <button id="p2Pass">Pass</button</>
             </div>
         </div>
+        <button id="2pRestart">Rematch?</button>
     </div>
 
     <script src="app.js"></script>
