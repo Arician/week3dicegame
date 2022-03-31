@@ -17,10 +17,18 @@ const remove=(i)=>{
 const unremove=(i)=>{
     i.style.display="block"
 }
+const vAnimation=(i)=>{
+    i.style.animationName="victory"
+}
+nAnimation=(i)=>{
+    i.style.animationName="none"
+}
 const gameover=(i) => {
     button.forEach(remove)
     unremove(restart)
     tpTitle.textContent=`P${i} WINS!`
+    vAnimation(tpTitle)
+    vAnimation(subTitle)
 }
 const critfail=(i) => {
     subTitle.textContent=`P${i} rolled a 1`
@@ -80,4 +88,6 @@ restart.addEventListener("click",() => {
     mScore.tp=0
     tpScorecard.textContent=mScore.tp
     opScorecard.textContent=mScore.op
+    nAnimation(tpTitle)
+    nAnimation(subTitle)
 })

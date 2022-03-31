@@ -39,8 +39,20 @@ a:hover{
 #scorecard{font-size: 70px;}
 
 /* mp */
-#mpTitle{font-size: 70px;}
-#mpSubTitle{font-size:40px}
+#mpTitle{
+    font-size: 70px;
+    animation-name: none;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    transition: ease;
+}
+#mpSubTitle{
+    font-size:40px;
+    animation-name: none;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    transition: ease;
+}
 .mpHero{
     display: flex;
     flex-direction: row;
@@ -59,3 +71,14 @@ a:hover{
 }
 #ptRoll{display:none}
 #ptPass{display:none}
+
+@keyframes victory{
+    12.5%{color:red}
+    25%{color:orange}
+    37.5%{color:yellow}
+    50%{color:green}
+    62.5%{color:blue}
+    75%{color:indigo}
+    87.5%{color:violet}
+    100%{color:pink}
+}
