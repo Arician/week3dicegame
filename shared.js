@@ -10,7 +10,7 @@ let diceImg={
 const vAnimation=(i)=>{
     i.style.animationName="victory"
 }
-nAnimation=(i)=>{
+const nAnimation=(i)=>{
     i.style.animationName="none"
 }
 let thisRoll=0
