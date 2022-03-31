@@ -17,12 +17,6 @@ const remove=(i)=>{
 const unremove=(i)=>{
     i.style.display="block"
 }
-const vAnimation=(i)=>{
-    i.style.animationName="victory"
-}
-nAnimation=(i)=>{
-    i.style.animationName="none"
-}
 const gameover=(i) => {
     button.forEach(remove)
     unremove(restart)

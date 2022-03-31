@@ -36,7 +36,12 @@ a:hover{
 
 /* sp */
 #restart {display: none}
-#scorecard{font-size: 70px;}
+#scorecard{font-size: 70px;
+    animation-name: none;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    transition: ease;
+}
 
 /* mp */
 #mpTitle{

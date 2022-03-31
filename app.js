@@ -11,6 +11,7 @@ let score=0
 const gameover=() => {
     roll.style.display="none"
     restart.style.display="block"
+    vAnimation(scorecard)
 }
 
 const scoreupdate=() => {scorecard.textContent=score}
@@ -32,4 +33,5 @@ restart.addEventListener("click",() => {
     roll.style.display="block"
     restart.style.display="none"
     state.textContent=""
+    nAnimation(scorecard)
 })

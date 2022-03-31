@@ -7,6 +7,12 @@ let diceImg={
     5:"images/5.png",
     6:"images/6.png",
 }
+const vAnimation=(i)=>{
+    i.style.animationName="victory"
+}
+nAnimation=(i)=>{
+    i.style.animationName="none"
+}
 let thisRoll=0
 let diceroll=()=>{
     thisRoll=Math.floor(Math.random()*5.99+1)
